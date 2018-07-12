@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:navigationIcon="@drawable/awaaz_logo"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="2dp"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="550dp" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view_pager"
+                app:tabBackground="@drawable/indicator_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_fragment"
+                android:layout_below="@+id/indicator"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_voice"
+                android:layout_below="@+id/button_fragment"
+                android:layout_marginTop="90dp"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="#3a2a51"
+                android:id="@+id/voice"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_voice_text"
+                android:layout_below="@+id/voice"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:paddingHorizontal="10dp"
+                android:id="@+id/voice_text"
+                android:layout_marginTop="10dp"
+                android:textColor="#9c9fb3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_back"
+                android:text="LEARN MORE"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/voice_text"
+                android:layout_marginTop="25dp"
+                android:paddingHorizontal="10dp"
+                android:id="@+id/voiceButton"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/process01"
+                android:foreground="#99000000"
+                android:layout_marginTop="50dp"
+                android:layout_below="@id/voiceButton"
+                android:id="@+id/process_image1"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:id="@+id/slide4title"
+                android:text="@string/slide4_title"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_alignTop="@+id/process_image1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/slide4title"
+                android:text="@string/slide4_subtitle"
+                android:textColor="#fff"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/process02"
+                android:foreground="#99000000"
+                android:layout_below="@id/process_image1"
+                android:id="@+id/process_image2"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:id="@+id/slide5title"
+                android:text="@string/slide5_title"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_alignTop="@+id/process_image2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/slide5title"
+                android:text="@string/slide5_subtitle"
+                android:textColor="#fff"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Helping And Providing"
+                android:layout_below="@+id/process_image2"
+                android:layout_marginTop="90dp"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="#3a2a51"
+                android:id="@+id/help"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/helping_text"
+                android:layout_below="@+id/help"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:paddingHorizontal="10dp"
+                android:id="@+id/help_text"
+                android:layout_marginTop="10dp"
+                android:textColor="#9c9fb3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_back"
+                android:text="DONATE"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/help_text"
+                android:layout_marginTop="25dp"
+                android:paddingHorizontal="10dp"
+                android:id="@+id/donateButton"
+                android:textSize="15sp"/>
+
+            <!--gallery code -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/bottom_fragment"
+                android:layout_below="@+id/donateButton"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

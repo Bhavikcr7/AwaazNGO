@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_home"
+        android:title="Home"
+        android:orderInCategory="1"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_who_we_are"
+        android:title="Who We Are"
+        android:orderInCategory="2"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_projects"
+        android:title="Projects"
+        android:orderInCategory="3"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_events"
+        android:title="Events"
+        android:orderInCategory="4"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_gallery"
+        android:title="Gallery"
+        android:orderInCategory="5"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_contact_us"
+        android:title="Contact Us"
+        android:orderInCategory="6"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_join_us"
+        android:title="Join Us"
+        android:orderInCategory="7"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_donate"
+        android:title="Donate"
+        android:orderInCategory="8"
+        app:showAsAction="never"/>
+
+</menu>

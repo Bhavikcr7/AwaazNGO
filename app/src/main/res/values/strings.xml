@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AwaazNGO</string>
+    <string name="slide1_title">AWAAZ NGO - A VOICE FOR CHANGE</string>
+    <string name="slide1_subtitle">National Level Working Non Governmental Organization Registered Under Society Registration Act, 1860</string>
+    <string name="slide2_title">Social Service &amp; Social Awareness</string>
+    <string name="slide2_subtitle">We work and serve for a better world where everyone can live happily and with smiling Face. We feel happy in helping others and want to become helping hand of society.</string>
+    <string name="slide3_title">We belive in helping other souls.</string>
+    <string name="slide3_subtitle">A nation wide organisation to help, motivate, empower those who are not capable. </string>
+    <string name="change_voice">AWAAZ NGO : A VOICE FOR CHANGE</string>
+    <string name="change_voice_text">Founded by Mr.Karanjeet Malik is a National Level Working Non Governmental Organization Registered Under Society Registration Act, 1860 having Head Office in Bulandshahr, Uttarpradesh. Awaaz Ngo’s main focus is on Social Service &amp; Social Awareness.</string>
+    <string name="slide4_title">EDUCATE TO EMPOWER</string>
+    <string name="slide4_subtitle">“Education is a most powerful weapon which you can use to change the world.”</string>
+    <string name="slide5_title">KHELO INDIA</string>
+    <string name="slide5_subtitle">“Champions keep playing until they get it right.”</string>
+    <string name="helping_text">We work and serve for a better world where everyone can live happily and with smiling Face. We feel happy in helping others and want to become helping hand of society.</string>
+    <string name="end_text">AWAAZ NGO : A VOICE FOR CHANGE Founded by Mr.Karanjeet Malik is a National Level Working Non Governmental Organization</string>
+    <string name="text">PROJECTS\n\nGALLERY\n\nEVENTS</string>
+    <string name="text2">WHO WE ARE\n\nTERMS &amp; CONDITIONS \n\n PRIVACY POLICY \n\n REFUND POLICY</string>
+    <string name="text3">GET INVOLVED\n\nDONATE\n\nJOIN US</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
