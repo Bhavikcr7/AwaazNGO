@@ -7,7 +7,7 @@
     android:orientation="horizontal"
     tools:context=".EventsActivity">
 
-    <ScrollView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
                 android:src="@drawable/home03"
-                android:scaleType="centerCrop"
+                android:scaleType="center"
                 android:id="@+id/image"
                 android:foreground="#99000000"/>
 
@@ -33,18 +33,40 @@
                 android:paddingHorizontal="12dp"
                 android:textAlignment="center"/>
 
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="UPCOMING EVENTS:"
+                android:layout_marginTop="10dp"
                 android:layout_below="@+id/image"
-                android:text="Upcoming Events :"/>
+                android:id="@+id/toptag"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/upcoming"
+                android:nestedScrollingEnabled="true"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/toptag"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Past EVENTS:"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/upcoming"
+                android:id="@+id/bottomtag"/>
+
+            <ListView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bottomtag"
+                android:id="@+id/past"/>
+
 
         </RelativeLayout>
 
-    </ScrollView>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bottom_fragment"/>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
