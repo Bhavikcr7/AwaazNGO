@@ -3,6 +3,7 @@ package com.decimalcorp.aditya.awaazngo;
 import android.app.Fragment;
 import android.app.ListActivity;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -33,6 +34,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Transformation;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -196,9 +199,13 @@ public class EventsActivity extends AppCompatActivity {
             TextView tv1 = (TextView) convertView.findViewById(R.id.eventDate);
             TextView tv2 = (TextView) convertView.findViewById(R.id.eventName);
             TextView tv3 = (TextView) convertView.findViewById(R.id.eventDesc);
+            ImageView iv1 = (ImageView) convertView.findViewById(R.id.eventPic);
             tv1.setText(mList.get(position).getDate());
             tv2.setText(mList.get(position).getName());
             tv3.setText(mList.get(position).getDetails());
+            Picasso.get().load(mList.get(position).getAdd())
+                    .placeholder(R.drawable.process02)
+                    .into(iv1);
 
             return convertView;
         }
